@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *LabelStepper;
+@property (weak, nonatomic) IBOutlet UIStepper *ObjStepper;
+@property (weak, nonatomic) IBOutlet UITextField *LabelNotification;
 
 @end
 

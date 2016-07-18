@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-zO-gku">
+                                <rect key="frame" x="90" y="140" width="94" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="DaZ-Eg-VVU"/>
+                                    <constraint firstAttribute="width" constant="94" id="mER-UJ-6Hf"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeStepper:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="AYa-A7-qyw"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tul-C9-cx1">
+                                <rect key="frame" x="84" y="59" width="106" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="58B-M7-GVV"/>
+                                    <constraint firstAttribute="width" constant="106" id="RXj-ZP-oWn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H5F-dJ-coZ">
+                                <rect key="frame" x="89" y="326" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YSW-Tv-5Uv"/>
+                                    <constraint firstAttribute="width" constant="97" id="j2O-HT-eUC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Notif. valor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q50-jR-c2J">
+                                <rect key="frame" x="70" y="268" width="134" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4V2-7z-CY1"/>
+                                    <constraint firstAttribute="width" constant="134" id="wF4-px-E5i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sgL-zO-gku" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="0s3-dQ-MTE"/>
+                            <constraint firstItem="H5F-dJ-coZ" firstAttribute="top" secondItem="q50-jR-c2J" secondAttribute="bottom" constant="28" id="CbK-3H-w4z"/>
+                            <constraint firstItem="q50-jR-c2J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="FnD-rD-grR"/>
+                            <constraint firstItem="sgL-zO-gku" firstAttribute="leading" secondItem="Tul-C9-cx1" secondAttribute="leading" id="Pwd-Lt-mCl"/>
+                            <constraint firstItem="q50-jR-c2J" firstAttribute="leading" secondItem="sgL-zO-gku" secondAttribute="leading" id="YQf-uF-4ep"/>
+                            <constraint firstItem="H5F-dJ-coZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="jeD-7y-dk6"/>
+                            <constraint firstItem="Tul-C9-cx1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="k4z-bX-kPC"/>
+                            <constraint firstItem="Tul-C9-cx1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="pnZ-Az-Zpf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="LabelNotification" destination="H5F-dJ-coZ" id="qou-i1-ctZ"/>
+                        <outlet property="LabelStepper" destination="Tul-C9-cx1" id="WYO-3o-hWt"/>
+                        <outlet property="ObjStepper" destination="sgL-zO-gku" id="lVZ-MI-aRa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="331" y="426"/>
         </scene>
     </scenes>
 </document>
