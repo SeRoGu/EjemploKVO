@@ -24,11 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)changeStepper:(id)sender forEvent:(UIEvent *)event {
-    
-    
-    id i=0;
-}
+
 
 
 
