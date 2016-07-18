@@ -25,13 +25,7 @@
 }
 
 
-<<<<<<< HEAD
-/*  Brabnch master*/
-=======
 
-/* Add Observe */
-
->>>>>>> NewActions
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
