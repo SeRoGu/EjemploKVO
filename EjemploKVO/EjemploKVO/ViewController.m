@@ -24,13 +24,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)changeStepper:(id)sender forEvent:(UIEvent *)event {
-    
-    
-    id i=0;
-}
 
+<<<<<<< HEAD
 /*  Brabnch master*/
+=======
+
+/* Add Observe */
+
+>>>>>>> NewActions
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -39,7 +40,6 @@
     
     
 }
-
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     if ([keyPath isEqual:@"ObjStepper.value" ]) {
         NSNumber * myDoubleNumber = [NSNumber numberWithDouble: self.ObjStepper.value ];

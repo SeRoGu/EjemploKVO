@@ -24,9 +24,6 @@
                                     <constraint firstAttribute="height" constant="29" id="DaZ-Eg-VVU"/>
                                     <constraint firstAttribute="width" constant="94" id="mER-UJ-6Hf"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="changeStepper:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="AYa-A7-qyw"/>
-                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tul-C9-cx1">
                                 <rect key="frame" x="84" y="59" width="106" height="53"/>
