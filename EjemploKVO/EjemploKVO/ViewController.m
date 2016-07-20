@@ -25,12 +25,18 @@
 }
 
 //______
-
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 
     [self addObserver:self forKeyPath:@"ObjStepper.value" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:NULL];
+    
+    
+    [self addObserver:self.TextObserver forKeyPath:@"ObjStepper.value" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:NULL];
+
     
     
 }
@@ -55,7 +61,7 @@
     
 }
 -(void)dealloc{
-    [self superclass];
+
     [self removeObserver:self forKeyPath:@"ObjStepper.value"];
 }
 @end

@@ -15,6 +15,9 @@
 		967D4B811D3D259E00285394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967D4B7F1D3D259E00285394 /* LaunchScreen.storyboard */; };
 		967D4B8C1D3D259E00285394 /* EjemploKVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 967D4B8B1D3D259E00285394 /* EjemploKVOTests.m */; };
 		967D4B971D3D259E00285394 /* EjemploKVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 967D4B961D3D259E00285394 /* EjemploKVOUITests.m */; };
+		968C79601D3FBE7600F22A1D /* CustumizedFieldText.m in Sources */ = {isa = PBXBuildFile; fileRef = 968C795F1D3FBE7600F22A1D /* CustumizedFieldText.m */; };
+		968C79611D3FBE7600F22A1D /* CustumizedFieldText.m in Sources */ = {isa = PBXBuildFile; fileRef = 968C795F1D3FBE7600F22A1D /* CustumizedFieldText.m */; };
+		968C79621D3FBE7600F22A1D /* CustumizedFieldText.m in Sources */ = {isa = PBXBuildFile; fileRef = 968C795F1D3FBE7600F22A1D /* CustumizedFieldText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,8 @@
 		967D4B921D3D259E00285394 /* EjemploKVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EjemploKVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		967D4B961D3D259E00285394 /* EjemploKVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EjemploKVOUITests.m; sourceTree = "<group>"; };
 		967D4B981D3D259E00285394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968C795E1D3FBE6000F22A1D /* CustumizedFieldText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustumizedFieldText.h; sourceTree = "<group>"; };
+		968C795F1D3FBE7600F22A1D /* CustumizedFieldText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustumizedFieldText.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,8 @@
 				967D4B7F1D3D259E00285394 /* LaunchScreen.storyboard */,
 				967D4B821D3D259E00285394 /* Info.plist */,
 				967D4B711D3D259E00285394 /* Supporting Files */,
+				968C795E1D3FBE6000F22A1D /* CustumizedFieldText.h */,
+				968C795F1D3FBE7600F22A1D /* CustumizedFieldText.m */,
 			);
 			path = EjemploKVO;
 			sourceTree = "<group>";
@@ -272,6 +279,7 @@
 			files = (
 				967D4B791D3D259E00285394 /* ViewController.m in Sources */,
 				967D4B761D3D259E00285394 /* AppDelegate.m in Sources */,
+				968C79601D3FBE7600F22A1D /* CustumizedFieldText.m in Sources */,
 				967D4B731D3D259E00285394 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968C79611D3FBE7600F22A1D /* CustumizedFieldText.m in Sources */,
 				967D4B8C1D3D259E00285394 /* EjemploKVOTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968C79621D3FBE7600F22A1D /* CustumizedFieldText.m in Sources */,
 				967D4B971D3D259E00285394 /* EjemploKVOUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,6 +510,7 @@
 				967D4B9D1D3D259E00285394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		967D4B9E1D3D259E00285394 /* Build configuration list for PBXNativeTarget "EjemploKVOTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +519,7 @@
 				967D4BA01D3D259E00285394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		967D4BA11D3D259E00285394 /* Build configuration list for PBXNativeTarget "EjemploKVOUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +528,7 @@
 				967D4BA31D3D259E00285394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
