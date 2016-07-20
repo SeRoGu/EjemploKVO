@@ -14,5 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIStepper *ObjStepper;
 @property (weak, nonatomic) IBOutlet UITextField *LabelNotification;
 
+@property (weak, nonatomic) IBOutlet UITextField *TextObserver;
+
+
 @end
 

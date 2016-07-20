@@ -24,9 +24,6 @@
                                     <constraint firstAttribute="height" constant="29" id="DaZ-Eg-VVU"/>
                                     <constraint firstAttribute="width" constant="94" id="mER-UJ-6Hf"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="changeStepper:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="AYa-A7-qyw"/>
-                                </connections>
                             </stepper>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tul-C9-cx1">
                                 <rect key="frame" x="84" y="59" width="106" height="53"/>
@@ -57,13 +54,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0DW-Io-Moa" customClass="CustumizedFieldText">
+                                <rect key="frame" x="282" y="139" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Objeto observador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2T1-HC-Msv">
+                                <rect key="frame" x="254" y="110" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="0DW-Io-Moa" firstAttribute="leading" secondItem="sgL-zO-gku" secondAttribute="trailing" constant="98" id="0ol-Il-Ucj"/>
                             <constraint firstItem="sgL-zO-gku" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="0s3-dQ-MTE"/>
                             <constraint firstItem="H5F-dJ-coZ" firstAttribute="top" secondItem="q50-jR-c2J" secondAttribute="bottom" constant="28" id="CbK-3H-w4z"/>
                             <constraint firstItem="q50-jR-c2J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="FnD-rD-grR"/>
+                            <constraint firstItem="2T1-HC-Msv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="FoG-Dp-Y00"/>
                             <constraint firstItem="sgL-zO-gku" firstAttribute="leading" secondItem="Tul-C9-cx1" secondAttribute="leading" id="Pwd-Lt-mCl"/>
+                            <constraint firstItem="2T1-HC-Msv" firstAttribute="leading" secondItem="Tul-C9-cx1" secondAttribute="trailing" constant="92" id="Tf4-fF-B04"/>
+                            <constraint firstItem="0DW-Io-Moa" firstAttribute="top" secondItem="2T1-HC-Msv" secondAttribute="bottom" constant="43" id="Y2Y-4J-vp4"/>
                             <constraint firstItem="q50-jR-c2J" firstAttribute="leading" secondItem="sgL-zO-gku" secondAttribute="leading" id="YQf-uF-4ep"/>
                             <constraint firstItem="H5F-dJ-coZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="69" id="jeD-7y-dk6"/>
                             <constraint firstItem="Tul-C9-cx1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="k4z-bX-kPC"/>
@@ -74,6 +86,7 @@
                         <outlet property="LabelNotification" destination="H5F-dJ-coZ" id="qou-i1-ctZ"/>
                         <outlet property="LabelStepper" destination="Tul-C9-cx1" id="WYO-3o-hWt"/>
                         <outlet property="ObjStepper" destination="sgL-zO-gku" id="lVZ-MI-aRa"/>
+                        <outlet property="TextObserver" destination="0DW-Io-Moa" id="K9P-YR-71S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

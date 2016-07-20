@@ -24,13 +24,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)changeStepper:(id)sender forEvent:(UIEvent *)event {
-    
-    
-    id i=0;
+//______
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
 }
-
-
 
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
@@ -38,8 +35,11 @@
     [self addObserver:self forKeyPath:@"ObjStepper.value" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:NULL];
     
     
-}
+    [self addObserver:self.TextObserver forKeyPath:@"ObjStepper.value" options:(NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld) context:NULL];
 
+    
+    
+}
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
     if ([keyPath isEqual:@"ObjStepper.value" ]) {
         NSNumber * myDoubleNumber = [NSNumber numberWithDouble: self.ObjStepper.value ];
@@ -61,7 +61,7 @@
     
 }
 -(void)dealloc{
-    [self superclass];
+
     [self removeObserver:self forKeyPath:@"ObjStepper.value"];
 }
 @end
